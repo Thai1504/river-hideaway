@@ -188,6 +188,7 @@ body{margin:0;background:#FBEEE0}
 .swipe::-webkit-scrollbar{display:none}
 .swipe{scroll-padding-left:16px}
 .swipe > *{flex:0 0 80%;scroll-snap-align:start}
+.rules-swipe > .card{margin:0}
 .swipehint{margin:28px 0 -8px;text-align:right;font-size:22px;color:var(--red)}
 .swipehint span{display:inline-block;animation:nudge-x 1.4s ease-in-out infinite}
 .liftview{position:relative;scroll-margin-top:150px}
@@ -1244,7 +1245,8 @@ Hà Nội · by the Red River
 </div>
 <p class="lede" style="margin-top: 14px">The short version. The full poster is on every floor.</p>
 
-<div class="g2" style="margin-top: 34px">
+<p class="hand swipehint" aria-hidden="true">swipe <span>→</span></p>
+<div class="g2 swipe rules-swipe" style="margin-top: 20px">
 <div class="card rulecard" style="background: var(--paper)"><span class="num">1</span>
 <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true" style="flex: none"><path class="s f-o" d="M38 8 A24 24 0 1 0 56 42 A19 19 0 0 1 38 8Z"></path><path class="s" d="M22 36 q4 4 8 0"></path><circle cx="20" cy="44" r="3" style="fill: #EFA08C"></circle><path class="ray" d="M52 10 l0 6 M49 13 h6" style="stroke-width: 2.5"></path></svg>
 <div><h3>Quiet hours: 10 PM – 8 AM</h3><p>Keep voices, music and phone calls low. Our neighbours and sleeping guests will thank you.</p></div></div>

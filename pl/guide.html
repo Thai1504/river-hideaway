@@ -143,6 +143,8 @@ body{margin:0;background:#FBEEE0}
 .ticket:nth-of-type(even){transform:rotate(1.2deg)}
 .ticket:hover{transform:rotate(0) translateY(-8px);box-shadow:6px 10px 0 var(--line)}
 .ticket img{width:100%;height:200px;object-fit:cover;display:block}
+.tstamp{position:absolute;top:12px;right:12px;z-index:2;width:78px;height:78px;border-radius:50%;background:var(--red);color:var(--on-red);border:2.5px solid var(--ink);box-shadow:0 0 0 3px var(--card);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:'Paytone One',sans-serif;font-size:15px;line-height:1.05;transform:rotate(10deg);padding:4px}
+.tstamp small{font-family:'Patrick Hand','Nunito',system-ui,sans-serif;font-size:14px}
 .ticket .stub{border-top:3px dashed var(--line);padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .ticket h3{margin:0;font-family:'Paytone One',sans-serif;font-weight:400;font-size:24px;text-transform:uppercase;line-height:1}
 .ticket .stub::before,.ticket .stub::after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:var(--card);border:2.5px solid var(--ink);top:189px}
@@ -440,7 +442,7 @@ html{scroll-padding-top:128px}
 .trip b{display:block;font-family:'Paytone One',sans-serif;font-weight:400;font-size:19px}
 .trip span{font-size:13px;color:var(--muted);font-weight:800}
 .srcs{font-size:12px;color:var(--muted);word-break:break-all;line-height:1.6}
-@media (min-width:700px){.gcards,.tips{grid-template-columns:repeat(2,minmax(0,1fr))}.phrases{grid-template-columns:repeat(3,minmax(0,1fr))}.trips{grid-template-columns:repeat(4,minmax(0,1fr))}.rules4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (min-width:700px){.gcards,.tips{grid-template-columns:repeat(2,minmax(0,1fr))}.phrases{grid-template-columns:repeat(3,minmax(0,1fr))}.trips{grid-template-columns:repeat(3,minmax(0,1fr))}.rules4{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (min-width:900px){html{scroll-padding-top:150px}.gnav{top:76px;justify-content:center}.ghero{padding:56px 24px 8px}.scene{height:300px}@keyframes cross{0%,8%{transform:translateY(0)}92%,100%{transform:translateY(-268px)}}}
 @media (min-width:1100px){.gcards{grid-template-columns:repeat(3,minmax(0,1fr))}.tips{grid-template-columns:repeat(3,minmax(0,1fr))}.phrases{grid-template-columns:repeat(4,minmax(0,1fr))}}
 </style>
@@ -735,8 +737,8 @@ html{scroll-padding-top:128px}
 <section id="trips" class="sec" style="padding-top: 30px"><div class="wrap">
 <div class="titlerow"><svg width="48" height="60" viewBox="0 0 48 60" aria-hidden="true"><path class="ray" d="M40 10 L24 2"></path><path class="ray" d="M40 30 L14 30"></path><path class="ray" d="M40 50 L24 58"></path></svg><h2 class="disp h2">Wyrwij się<br><span class="r">z miasta</span></h2><svg width="48" height="60" viewBox="0 0 48 60" aria-hidden="true" class="flip"><path class="ray" d="M40 10 L24 2"></path><path class="ray" d="M40 30 L14 30"></path><path class="ray" d="M40 50 L24 58"></path></svg></div>
 <p class="lede">Wszystkie zarezerwujesz u nas w recepcji, a w trasie pomożemy po angielsku.</p>
-<div class="trips"><div class="card trip"><b>Ninh Bình</b><span>~2 h · Wapienne szczyty z łódki</span></div><div class="card trip"><b>Hạ Long / Lan Hạ</b><span>~2,5 h · Rejs z noclegiem bije na głowę wycieczkę jednodniową</span></div><div class="card trip"><b>Hà Giang / Sa Pa</b><span>z noclegiem · Góry; najlepiej z easy riderem</span></div><div class="card trip"><b>Bát Tràng</b><span>~45 min · Wioska garncarzy, luźne pół dnia</span></div></div>
-<p style="margin-top: 20px"><a class="btn" href="index.html#tours">Zobacz nasze wycieczki</a></p>
+<div class="trips"><div class="card trip"><b>Ninh Bình</b><span><span>~2 h</span> · <span>1–2 dni</span></span></div><div class="card trip"><b>Zatoka Hạ Long</b><span><span>~3 h</span> · <span>2 dni</span></span></div><div class="card trip"><b>Sa Pa</b><span><span>~6 h</span> · <span>3 dni</span></span></div><div class="card trip"><b>Pętla Hà Giang</b><span><span>~7 h</span> · <span>4 dni</span></span></div><div class="card trip"><b>Cao Bằng</b><span><span>~7 h</span> · <span>3 dni</span></span></div></div>
+<p style="margin-top: 20px"><a class="btn" href="tours.html">Zobacz nasze wycieczki</a></p>
 </div>
 </section>
 

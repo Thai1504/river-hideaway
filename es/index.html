@@ -143,6 +143,8 @@ body{margin:0;background:#FBEEE0}
 .ticket:nth-of-type(even){transform:rotate(1.2deg)}
 .ticket:hover{transform:rotate(0) translateY(-8px);box-shadow:6px 10px 0 var(--line)}
 .ticket img{width:100%;height:200px;object-fit:cover;display:block}
+.tstamp{position:absolute;top:12px;right:12px;z-index:2;width:78px;height:78px;border-radius:50%;background:var(--red);color:var(--on-red);border:2.5px solid var(--ink);box-shadow:0 0 0 3px var(--card);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:'Paytone One',sans-serif;font-size:15px;line-height:1.05;transform:rotate(10deg);padding:4px}
+.tstamp small{font-family:'Patrick Hand','Nunito',system-ui,sans-serif;font-size:14px}
 .ticket .stub{border-top:3px dashed var(--line);padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .ticket h3{margin:0;font-family:'Paytone One',sans-serif;font-weight:400;font-size:24px;text-transform:uppercase;line-height:1}
 .ticket .stub::before,.ticket .stub::after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:var(--card);border:2.5px solid var(--ink);top:189px}
@@ -1155,57 +1157,63 @@ Hà Nội · a orillas del río Rojo
 <span class="chip">Ayuda en inglés durante el viaje</span>
 <span class="chip">Hay más rutas: pregúntanos</span>
 </div>
+<p style="text-align: center; margin: 22px 0 0"><a class="btn" href="tours.html">Leer las notas de viaje <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a></p>
 
 <p class="hand swipehint" aria-hidden="true">desliza <span>→</span></p>
 <div class="tours swipe">
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-hagiang.jpg" alt="El paso de Mã Pí Lèng serpenteando sobre el cañón de un río">
+<span class="tstamp"><small>lo ideal</small>4 días</span>
 <div class="stub">
 <h3>Loop de Hà Giang</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Fechas y precios: pregunta en recepción</div>
 <p style="margin: 0; font-size: 15px">Puertos de montaña, mesetas kársticas y el cañón de Mã Pí Lèng.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Pregúntanos</a>
+<a class="btn sm ghost" href="tours.html#ha-giang" style="margin-top: auto">Qué ver <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-sapa.jpg" alt="Arrozales en terraza del valle de Ta Van, cerca de Sa Pa">
+<span class="tstamp"><small>lo ideal</small>3 días</span>
 <div class="stub">
 <h3>Sa Pa</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Fechas y precios: pregunta en recepción</div>
 <p style="margin: 0; font-size: 15px">Arrozales en terraza y aldeas de montaña, casi todo a pie.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Pregúntanos</a>
+<a class="btn sm ghost" href="tours.html#sa-pa" style="margin-top: auto">Qué ver <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-ninhbinh.jpg" alt="Picos de piedra caliza y el río en Tràng An">
+<span class="tstamp"><small>lo ideal</small>1–2 días</span>
 <div class="stub">
 <h3>Ninh Bình</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Fechas y precios: pregunta en recepción</div>
 <p style="margin: 0; font-size: 15px">En barca de remos entre picos de piedra caliza.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Pregúntanos</a>
+<a class="btn sm ghost" href="tours.html#ninh-binh" style="margin-top: auto">Qué ver <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-halong.jpg" alt="Islas de la bahía de Hạ Long">
+<span class="tstamp"><small>lo ideal</small>2 días</span>
 <div class="stub">
 <h3>Bahía de Hạ Long</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Fechas y precios: pregunta en recepción</div>
 <p style="margin: 0; font-size: 15px">Islas de piedra caliza que salen del agua en vertical.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Pregúntanos</a>
+<a class="btn sm ghost" href="tours.html#ha-long" style="margin-top: auto">Qué ver <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-caobang.jpg" alt="Cascada de Bản Giốc, en Cao Bằng">
+<span class="tstamp"><small>lo ideal</small>3 días</span>
 <div class="stub">
 <h3>Cao Bằng</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Fechas y precios: pregunta en recepción</div>
 <p style="margin: 0; font-size: 15px">La cascada de Bản Giốc y la calma del extremo norte.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Pregúntanos</a>
+<a class="btn sm ghost" href="tours.html#cao-bang" style="margin-top: auto">Qué ver <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 

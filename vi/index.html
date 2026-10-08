@@ -143,6 +143,8 @@ body{margin:0;background:#FBEEE0}
 .ticket:nth-of-type(even){transform:rotate(1.2deg)}
 .ticket:hover{transform:rotate(0) translateY(-8px);box-shadow:6px 10px 0 var(--line)}
 .ticket img{width:100%;height:200px;object-fit:cover;display:block}
+.tstamp{position:absolute;top:12px;right:12px;z-index:2;width:78px;height:78px;border-radius:50%;background:var(--red);color:var(--on-red);border:2.5px solid var(--ink);box-shadow:0 0 0 3px var(--card);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:'Paytone One',sans-serif;font-size:15px;line-height:1.05;transform:rotate(10deg);padding:4px}
+.tstamp small{font-family:'Patrick Hand','Nunito',system-ui,sans-serif;font-size:14px}
 .ticket .stub{border-top:3px dashed var(--line);padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .ticket h3{margin:0;font-family:'Paytone One',sans-serif;font-weight:400;font-size:24px;text-transform:uppercase;line-height:1}
 .ticket .stub::before,.ticket .stub::after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:var(--card);border:2.5px solid var(--ink);top:189px}
@@ -1155,57 +1157,63 @@ Hà Nội · bên sông Hồng
 <span class="chip">Hỗ trợ tiếng Anh dọc đường</span>
 <span class="chip">Còn nhiều tuyến khác: cứ hỏi</span>
 </div>
+<p style="text-align: center; margin: 22px 0 0"><a class="btn" href="tours.html">Xem chi tiết tour <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a></p>
 
 <p class="hand swipehint" aria-hidden="true">vuốt sang <span>→</span></p>
 <div class="tours swipe">
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-hagiang.jpg" alt="Đèo Mã Pí Lèng uốn lượn trên hẻm vực sông">
+<span class="tstamp"><small>nên đi</small>4 ngày</span>
 <div class="stub">
 <h3>Cung đường Hà Giang</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Lịch và giá: hỏi bọn mình ở quầy</div>
 <p style="margin: 0; font-size: 15px">Đèo dốc, cao nguyên đá và hẻm vực Mã Pí Lèng.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Hỏi bọn mình</a>
+<a class="btn sm ghost" href="tours.html#ha-giang" style="margin-top: auto">Có gì hay <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-sapa.jpg" alt="Ruộng bậc thang ở thung lũng Tả Van, gần Sa Pa">
+<span class="tstamp"><small>nên đi</small>3 ngày</span>
 <div class="stub">
 <h3>Sa Pa</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Lịch và giá: hỏi bọn mình ở quầy</div>
 <p style="margin: 0; font-size: 15px">Ruộng bậc thang và bản làng trên núi, chủ yếu đi bộ.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Hỏi bọn mình</a>
+<a class="btn sm ghost" href="tours.html#sa-pa" style="margin-top: auto">Có gì hay <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-ninhbinh.jpg" alt="Núi đá vôi và sông ở Tràng An">
+<span class="tstamp"><small>nên đi</small>1–2 ngày</span>
 <div class="stub">
 <h3>Ninh Bình</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Lịch và giá: hỏi bọn mình ở quầy</div>
 <p style="margin: 0; font-size: 15px">Ngồi đò len lỏi giữa núi đá vôi.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Hỏi bọn mình</a>
+<a class="btn sm ghost" href="tours.html#ninh-binh" style="margin-top: auto">Có gì hay <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-halong.jpg" alt="Các đảo trên vịnh Hạ Long">
+<span class="tstamp"><small>nên đi</small>2 ngày</span>
 <div class="stub">
 <h3>Vịnh Hạ Long</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Lịch và giá: hỏi bọn mình ở quầy</div>
 <p style="margin: 0; font-size: 15px">Đảo đá vôi nhô thẳng lên từ mặt vịnh.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Hỏi bọn mình</a>
+<a class="btn sm ghost" href="tours.html#ha-long" style="margin-top: auto">Có gì hay <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-caobang.jpg" alt="Thác Bản Giốc ở Cao Bằng">
+<span class="tstamp"><small>nên đi</small>3 ngày</span>
 <div class="stub">
 <h3>Cao Bằng</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Lịch và giá: hỏi bọn mình ở quầy</div>
 <p style="margin: 0; font-size: 15px">Thác Bản Giốc và miền cực Bắc yên bình.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Hỏi bọn mình</a>
+<a class="btn sm ghost" href="tours.html#cao-bang" style="margin-top: auto">Có gì hay <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 

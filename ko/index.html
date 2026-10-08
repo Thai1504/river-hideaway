@@ -143,6 +143,8 @@ body{margin:0;background:#FBEEE0}
 .ticket:nth-of-type(even){transform:rotate(1.2deg)}
 .ticket:hover{transform:rotate(0) translateY(-8px);box-shadow:6px 10px 0 var(--line)}
 .ticket img{width:100%;height:200px;object-fit:cover;display:block}
+.tstamp{position:absolute;top:12px;right:12px;z-index:2;width:78px;height:78px;border-radius:50%;background:var(--red);color:var(--on-red);border:2.5px solid var(--ink);box-shadow:0 0 0 3px var(--card);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:'Paytone One',sans-serif;font-size:15px;line-height:1.05;transform:rotate(10deg);padding:4px}
+.tstamp small{font-family:'Patrick Hand','Nunito',system-ui,sans-serif;font-size:14px}
 .ticket .stub{border-top:3px dashed var(--line);padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .ticket h3{margin:0;font-family:'Paytone One',sans-serif;font-weight:400;font-size:24px;text-transform:uppercase;line-height:1}
 .ticket .stub::before,.ticket .stub::after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:var(--card);border:2.5px solid var(--ink);top:189px}
@@ -1155,57 +1157,63 @@ Hà Nội · 홍강 바로 옆
 <span class="chip">이동 중 영어 지원</span>
 <span class="chip">여기 없는 코스도 문의 OK</span>
 </div>
+<p style="text-align: center; margin: 22px 0 0"><a class="btn" href="tours.html">여행 노트 보기 <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a></p>
 
 <p class="hand swipehint" aria-hidden="true">옆으로 넘겨 봐요 <span>→</span></p>
 <div class="tours swipe">
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-hagiang.jpg" alt="강 협곡 위로 굽이치는 Mã Pí Lèng 고개">
+<span class="tstamp"><small>추천 일정</small>4일</span>
 <div class="stub">
 <h3>Hà Giang 루프</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">날짜·가격은 스태프에게 문의</div>
 <p style="margin: 0; font-size: 15px">굽이굽이 산길, 카르스트 고원, 그리고 Mã Pí Lèng 협곡.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">문의하기</a>
+<a class="btn sm ghost" href="tours.html#ha-giang" style="margin-top: auto">볼거리 <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-sapa.jpg" alt="Sa Pa 근처 Ta Van 계곡의 계단식 논">
+<span class="tstamp"><small>추천 일정</small>3일</span>
 <div class="stub">
 <h3>Sa Pa</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">날짜·가격은 스태프에게 문의</div>
 <p style="margin: 0; font-size: 15px">계단식 논과 산골 마을, 대부분 걸어서 다녀요.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">문의하기</a>
+<a class="btn sm ghost" href="tours.html#sa-pa" style="margin-top: auto">볼거리 <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-ninhbinh.jpg" alt="Tràng An의 석회암 봉우리와 강">
+<span class="tstamp"><small>추천 일정</small>1~2일</span>
 <div class="stub">
 <h3>Ninh Bình</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">날짜·가격은 스태프에게 문의</div>
 <p style="margin: 0; font-size: 15px">석회암 봉우리 사이를 나룻배로 누벼요.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">문의하기</a>
+<a class="btn sm ghost" href="tours.html#ninh-binh" style="margin-top: auto">볼거리 <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-halong.jpg" alt="Hạ Long 베이의 섬들">
+<span class="tstamp"><small>추천 일정</small>2일</span>
 <div class="stub">
 <h3>Hạ Long 베이</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">날짜·가격은 스태프에게 문의</div>
 <p style="margin: 0; font-size: 15px">바다 위로 불쑥 솟은 석회암 섬들.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">문의하기</a>
+<a class="btn sm ghost" href="tours.html#ha-long" style="margin-top: auto">볼거리 <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-caobang.jpg" alt="Cao Bằng의 Bản Giốc 폭포">
+<span class="tstamp"><small>추천 일정</small>3일</span>
 <div class="stub">
 <h3>Cao Bằng</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">날짜·가격은 스태프에게 문의</div>
 <p style="margin: 0; font-size: 15px">Bản Giốc 폭포, 그리고 고요한 최북단.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">문의하기</a>
+<a class="btn sm ghost" href="tours.html#cao-bang" style="margin-top: auto">볼거리 <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 

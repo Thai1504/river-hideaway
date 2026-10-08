@@ -143,6 +143,8 @@ body{margin:0;background:#FBEEE0}
 .ticket:nth-of-type(even){transform:rotate(1.2deg)}
 .ticket:hover{transform:rotate(0) translateY(-8px);box-shadow:6px 10px 0 var(--line)}
 .ticket img{width:100%;height:200px;object-fit:cover;display:block}
+.tstamp{position:absolute;top:12px;right:12px;z-index:2;width:78px;height:78px;border-radius:50%;background:var(--red);color:var(--on-red);border:2.5px solid var(--ink);box-shadow:0 0 0 3px var(--card);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:'Paytone One',sans-serif;font-size:15px;line-height:1.05;transform:rotate(10deg);padding:4px}
+.tstamp small{font-family:'Patrick Hand','Nunito',system-ui,sans-serif;font-size:14px}
 .ticket .stub{border-top:3px dashed var(--line);padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .ticket h3{margin:0;font-family:'Paytone One',sans-serif;font-weight:400;font-size:24px;text-transform:uppercase;line-height:1}
 .ticket .stub::before,.ticket .stub::after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:var(--card);border:2.5px solid var(--ink);top:189px}
@@ -1155,57 +1157,63 @@ Hà Nội · di tepi Sungai Merah
 <span class="chip">Bantuan bahasa Inggris</span>
 <span class="chip">Rute lain masih banyak: tanya aja</span>
 </div>
+<p style="text-align: center; margin: 22px 0 0"><a class="btn" href="tours.html">Baca catatan trip <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a></p>
 
 <p class="hand swipehint" aria-hidden="true">geser <span>→</span></p>
 <div class="tours swipe">
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-hagiang.jpg" alt="Celah Mã Pí Lèng berkelok di atas ngarai sungai">
+<span class="tstamp"><small>idealnya</small>4 hari</span>
 <div class="stub">
 <h3>Hà Giang loop</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Tanggal + harga: tanya staf kami</div>
 <p style="margin: 0; font-size: 15px">Jalur pegunungan, dataran tinggi karst, dan ngarai Mã Pí Lèng.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Tanya dulu</a>
+<a class="btn sm ghost" href="tours.html#ha-giang" style="margin-top: auto">Ada apa di sana <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-sapa.jpg" alt="Sawah terasering di lembah Ta Van dekat Sa Pa">
+<span class="tstamp"><small>idealnya</small>3 hari</span>
 <div class="stub">
 <h3>Sa Pa</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Tanggal + harga: tanya staf kami</div>
 <p style="margin: 0; font-size: 15px">Sawah terasering dan desa-desa di perbukitan, kebanyakan ditempuh jalan kaki.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Tanya dulu</a>
+<a class="btn sm ghost" href="tours.html#sa-pa" style="margin-top: auto">Ada apa di sana <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-ninhbinh.jpg" alt="Bukit kapur dan sungai di Tràng An">
+<span class="tstamp"><small>idealnya</small>1–2 hari</span>
 <div class="stub">
 <h3>Ninh Bình</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Tanggal + harga: tanya staf kami</div>
 <p style="margin: 0; font-size: 15px">Naik perahu dayung di antara bukit-bukit kapur.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Tanya dulu</a>
+<a class="btn sm ghost" href="tours.html#ninh-binh" style="margin-top: auto">Ada apa di sana <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-halong.jpg" alt="Pulau-pulau di Teluk Hạ Long">
+<span class="tstamp"><small>idealnya</small>2 hari</span>
 <div class="stub">
 <h3>Teluk Hạ Long</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Tanggal + harga: tanya staf kami</div>
 <p style="margin: 0; font-size: 15px">Pulau-pulau kapur yang menjulang langsung dari teluk.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Tanya dulu</a>
+<a class="btn sm ghost" href="tours.html#ha-long" style="margin-top: auto">Ada apa di sana <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-caobang.jpg" alt="Air terjun Bản Giốc di Cao Bằng">
+<span class="tstamp"><small>idealnya</small>3 hari</span>
 <div class="stub">
 <h3>Cao Bằng</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Tanggal + harga: tanya staf kami</div>
 <p style="margin: 0; font-size: 15px">Air terjun Bản Giốc dan ujung utara yang sunyi.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Tanya dulu</a>
+<a class="btn sm ghost" href="tours.html#cao-bang" style="margin-top: auto">Ada apa di sana <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 

@@ -143,6 +143,8 @@ body{margin:0;background:#FBEEE0}
 .ticket:nth-of-type(even){transform:rotate(1.2deg)}
 .ticket:hover{transform:rotate(0) translateY(-8px);box-shadow:6px 10px 0 var(--line)}
 .ticket img{width:100%;height:200px;object-fit:cover;display:block}
+.tstamp{position:absolute;top:12px;right:12px;z-index:2;width:78px;height:78px;border-radius:50%;background:var(--red);color:var(--on-red);border:2.5px solid var(--ink);box-shadow:0 0 0 3px var(--card);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:'Paytone One',sans-serif;font-size:15px;line-height:1.05;transform:rotate(10deg);padding:4px}
+.tstamp small{font-family:'Patrick Hand','Nunito',system-ui,sans-serif;font-size:14px}
 .ticket .stub{border-top:3px dashed var(--line);padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
 .ticket h3{margin:0;font-family:'Paytone One',sans-serif;font-weight:400;font-size:24px;text-transform:uppercase;line-height:1}
 .ticket .stub::before,.ticket .stub::after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:var(--card);border:2.5px solid var(--ink);top:189px}
@@ -1155,57 +1157,63 @@ Hà Nội · vid Röda floden
 <span class="chip">Hjälp på engelska under resan</span>
 <span class="chip">Fler rutter än de här: fråga</span>
 </div>
+<p style="text-align: center; margin: 22px 0 0"><a class="btn" href="tours.html">Läs om turerna <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a></p>
 
 <p class="hand swipehint" aria-hidden="true">svep <span>→</span></p>
 <div class="tours swipe">
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-hagiang.jpg" alt="Mã Pí Lèng-passet slingrar sig ovanför en flodravin">
+<span class="tstamp"><small>bäst på</small>4 dagar</span>
 <div class="stub">
 <h3>Hà Giang-loopen</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Datum + priser: fråga personalen</div>
 <p style="margin: 0; font-size: 15px">Bergspass, karstplatåer och ravinen vid Mã Pí Lèng.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Fråga om den</a>
+<a class="btn sm ghost" href="tours.html#ha-giang" style="margin-top: auto">Vad finns där? <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-sapa.jpg" alt="Risterrasser i Ta Van-dalen nära Sa Pa">
+<span class="tstamp"><small>bäst på</small>3 dagar</span>
 <div class="stub">
 <h3>Sa Pa</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Datum + priser: fråga personalen</div>
 <p style="margin: 0; font-size: 15px">Risterrasser och byar uppe i bergen, mest till fots.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Fråga om den</a>
+<a class="btn sm ghost" href="tours.html#sa-pa" style="margin-top: auto">Vad finns där? <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-ninhbinh.jpg" alt="Kalkstenstoppar och flod i Tràng An">
+<span class="tstamp"><small>bäst på</small>1–2 dagar</span>
 <div class="stub">
 <h3>Ninh Bình</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Datum + priser: fråga personalen</div>
 <p style="margin: 0; font-size: 15px">Med roddbåt mellan kalkstenstopparna.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Fråga om den</a>
+<a class="btn sm ghost" href="tours.html#ninh-binh" style="margin-top: auto">Vad finns där? <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-halong.jpg" alt="Öar i Hạ Long-bukten">
+<span class="tstamp"><small>bäst på</small>2 dagar</span>
 <div class="stub">
 <h3>Hạ Long-bukten</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Datum + priser: fråga personalen</div>
 <p style="margin: 0; font-size: 15px">Kalkstensöar som reser sig rakt upp ur bukten.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Fråga om den</a>
+<a class="btn sm ghost" href="tours.html#ha-long" style="margin-top: auto">Vad finns där? <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="../assets/tour-caobang.jpg" alt="Vattenfallet Bản Giốc i Cao Bằng">
+<span class="tstamp"><small>bäst på</small>3 dagar</span>
 <div class="stub">
 <h3>Cao Bằng</h3>
 <div style="font-size: 15px; font-weight: 800; color: var(--muted)">Datum + priser: fråga personalen</div>
 <p style="margin: 0; font-size: 15px">Vattenfallet Bản Giốc och lugnet längst upp i norr.</p>
-<a class="btn sm ghost" href="#contact" style="margin-top: auto">Fråga om den</a>
+<a class="btn sm ghost" href="tours.html#cao-bang" style="margin-top: auto">Vad finns där? <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18" style="fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
 </article>
 

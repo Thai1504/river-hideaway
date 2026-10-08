@@ -69,6 +69,8 @@ body{margin:0;background:#FBEEE0}
 .big{font-size:clamp(42px,12.6vw,104px)}
 .big > span{white-space:nowrap}
 .big .burst{width:34px;height:46px}
+.hero-lede{font-size:18px}
+.hero-cta{display:none}
 .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:26px}
 .stat{background:var(--card);border:2.5px solid var(--ink);border-radius:18px;padding:10px 14px;box-shadow:4px 4px 0 var(--line)}
 .stat b{display:block;font-family:'Paytone One',sans-serif;font-weight:400;font-size:24px;line-height:1.05}
@@ -316,6 +318,8 @@ body{margin:0;background:#FBEEE0}
  .lede{font-size:19px;margin-top:22px}
  .hero{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:40px;padding:56px 24px 80px}
  .big .burst{width:50px;height:64px}
+ .hero-lede{font-size:21px}
+ .hero-cta{display:flex}
  .hero-art{min-height:640px}
  .screen span{display:block}
  .hero-main{right:30px;width:72%}
@@ -353,7 +357,7 @@ body{margin:0;background:#FBEEE0}
  .ticket .stub::before,.ticket .stub::after{top:199px}
 }
 </style>
-<style>html{scroll-behavior:smooth;scroll-padding-top:80px}@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}[hidden]{display:none!important}</style>
+<style>.plx{transition:none!important;will-change:transform;transform:scale(1.22)}.room .pic,.ticket,.polaroid{overflow:hidden}html{scroll-behavior:smooth;scroll-padding-top:80px}@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}[hidden]{display:none!important}</style>
 <style>
 .gnav{position:sticky;top:64px;z-index:15;background:var(--paper);display:flex;gap:8px;overflow-x:auto;padding:10px 16px;border-bottom:2px dashed var(--line);scrollbar-width:none}
 .gnav::-webkit-scrollbar{display:none}

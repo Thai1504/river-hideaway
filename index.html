@@ -69,6 +69,8 @@ body{margin:0;background:#FBEEE0}
 .big{font-size:clamp(42px,12.6vw,104px)}
 .big > span{white-space:nowrap}
 .big .burst{width:34px;height:46px}
+.hero-lede{font-size:18px}
+.hero-cta{display:none}
 .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:26px}
 .stat{background:var(--card);border:2.5px solid var(--ink);border-radius:18px;padding:10px 14px;box-shadow:4px 4px 0 var(--line)}
 .stat b{display:block;font-family:'Paytone One',sans-serif;font-weight:400;font-size:24px;line-height:1.05}
@@ -316,6 +318,8 @@ body{margin:0;background:#FBEEE0}
  .lede{font-size:19px;margin-top:22px}
  .hero{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:40px;padding:56px 24px 80px}
  .big .burst{width:50px;height:64px}
+ .hero-lede{font-size:21px}
+ .hero-cta{display:flex}
  .hero-art{min-height:640px}
  .screen span{display:block}
  .hero-main{right:30px;width:72%}
@@ -353,7 +357,7 @@ body{margin:0;background:#FBEEE0}
  .ticket .stub::before,.ticket .stub::after{top:199px}
 }
 </style>
-<style>html{scroll-behavior:smooth;scroll-padding-top:80px}@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}[hidden]{display:none!important}</style>
+<style>.plx{transition:none!important;will-change:transform;transform:scale(1.22)}.room .pic,.ticket,.polaroid{overflow:hidden}html{scroll-behavior:smooth;scroll-padding-top:80px}@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}[hidden]{display:none!important}</style>
 </head>
 <body>
 <div class="rv" data-theme="auto" data-motion="on">
@@ -394,14 +398,14 @@ Hà Nội · by the Red River
 </span>
 </h1>
 <svg class="swoosh" viewBox="0 0 400 16" style="margin: 6px 0 0; width: 62%" aria-hidden="true"><path d="M4 10 C100 2,300 2,396 9" style="stroke: var(--ink); stroke-width: 4; fill: none; stroke-linecap: round"></path></svg>
-<p style="font-size: 21px; max-width: 560px; margin: 26px 0 0; font-weight: 700">46 beds between the Old Quarter and the river, five minutes' walk over the footbridge. Close enough for bia hơi, far enough to actually sleep. Curtains on every bunk, free breakfast, a terrace with string lights, and an owner who answers WhatsApp.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 30px">
+<p class="hero-lede" style="max-width: 520px; margin: 22px 0 0; font-weight: 700">46 beds between the Old Quarter and the Red River. Free breakfast, a sunset terrace, a curtain on every bunk.</p>
+<div class="hero-cta" style="flex-wrap: wrap; gap: 16px; margin-top: 30px">
 <a class="btn" href="#book">See prices
 <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" style="stroke: currentColor; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round"></path></svg>
 </a>
 <a class="btn ghost" href="https://wa.me/84987882002" target="_blank" rel="noopener">Chat on WhatsApp</a>
 </div>
-<p class="pill" style="margin: 20px 0 0; font-size: 16px">Rated 10/10 on Hostelworld. Book on Hostelworld, Booking.com or Agoda, whichever app you trust.</p>
+<p class="pill" style="margin: 18px 0 0; font-size: 15px">★ 10/10 on Hostelworld</p>
 <div class="stats">
 <div class="stat" style="--i: 0; transform: rotate(-2deg)"><b>46 beds</b><span>5 dorms + 2 private rooms</span></div>
 <div class="stat" style="--i: 1; transform: rotate(1.5deg)"><b>5 min</b><span>walk to the Old Quarter</span></div>
@@ -1446,11 +1450,18 @@ Hà Nội · by the Red River
   document.querySelectorAll('.stat b').forEach(function(b,i){var go=counter(b);if(go)setTimeout(go,800+i*120);});
   document.querySelectorAll('.big-price').forEach(function(b){var go=counter(b,250);var card=b.closest('.rv-r');if(go&&card)card._count=go;else if(go)go();});
   /* progress + hero drift */
-  var bar=document.querySelector('.progress'),hm=document.querySelector('.hero-main'),hs=document.querySelector('.hero-sub'),ticking=false;
+  var bar=document.querySelector('.progress'),hm=document.querySelector('.hero-main'),hs=document.querySelector('.hero-sub'),st=document.querySelector('.hero-art .spin'),ticking=false;
+  var plx=[];
+  document.querySelectorAll('.room .pic img, .ticket img, .polaroid img').forEach(function(im){
+    if(im.closest('.hero-art')) return;
+    im.classList.add('plx');plx.push({im:im,box:im.parentNode});
+  });
   function onScroll(){
     var y=window.scrollY,h=document.documentElement.scrollHeight-innerHeight;
     if(bar) bar.style.setProperty('--p',(h>0?y/h*100:0).toFixed(2)+'%');
-    if(y<1000){if(hm)hm.style.translate='0 '+(y*0.09).toFixed(1)+'px';if(hs)hs.style.translate='0 '+(-y*0.06).toFixed(1)+'px';}
+    if(y<1400){if(hm)hm.style.translate='0 '+(y*0.16).toFixed(1)+'px';if(hs)hs.style.translate='0 '+(-y*0.12).toFixed(1)+'px';if(st)st.style.translate='0 '+(-y*0.3).toFixed(1)+'px';}
+    var vh=innerHeight;
+    for(var i=0;i<plx.length;i++){var p=plx[i];var r=p.box.getBoundingClientRect();if(r.bottom<-100||r.top>vh+100||!r.height)continue;var k=((r.top+r.height/2)-vh/2)/(vh/2+r.height/2);k=Math.max(-1,Math.min(1,k));p.im.style.transform='translateY('+(k*-9).toFixed(2)+'%) scale(1.22)';}
     ticking=false;
   }
   addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll);}},{passive:true});

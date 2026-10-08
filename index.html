@@ -31,7 +31,7 @@ body{margin:0;background:#FBEEE0}
 .wrap{max-width:1240px;margin:0 auto;padding:0 16px}
 .disp{font-family:'Paytone One','Nunito',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.95;margin:0}
 .hand{font-family:'Patrick Hand',cursive;font-weight:400}
-.sec{padding:72px 0 56px}
+.sec{padding:60px 0 44px}
 .h2{font-size:clamp(40px,11vw,106px)}
 .h2 .r{color:var(--red)}
 .titlerow{display:flex;align-items:center;justify-content:center;gap:10px;text-align:center}
@@ -59,19 +59,21 @@ body{margin:0;background:#FBEEE0}
 .nav{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:2.5px solid var(--line)}
 .navin{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
 .navin .brand{font-size:22px}
+.navcta{display:none!important}
 .navlinks{display:none;gap:26px;font-weight:800;font-size:15px}
 .navlinks a{color:var(--ink);text-decoration:none;position:relative}
 .navlinks a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:3px;border-radius:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .2s ease}
 .navlinks a:hover::after{transform:scaleX(1)}
 .progress{position:absolute;left:0;bottom:-2.5px;width:100%;height:4px;background:var(--red);transform-origin:left;transform:scaleX(0)}
-.hero{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;align-items:center;padding:28px 0 56px}
-.big{font-size:clamp(50px,15vw,104px)}
-.big .burst{width:40px;height:52px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;align-items:center;padding:24px 16px 48px}
+.big{font-size:clamp(42px,12.6vw,104px)}
+.big > span{white-space:nowrap}
+.big .burst{width:34px;height:46px}
 .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:26px}
 .stat{background:var(--card);border:2.5px solid var(--ink);border-radius:18px;padding:10px 14px;box-shadow:4px 4px 0 var(--line)}
 .stat b{display:block;font-family:'Paytone One',sans-serif;font-weight:400;font-size:24px;line-height:1.05}
 .stat span{font-size:13px;color:var(--muted);font-weight:800}
-.hero-art{position:relative;min-height:470px}
+.hero-art{position:relative;min-height:560px}
 .hero-main{position:absolute;top:10px;right:6px;width:78%}
 .hero-main img{height:310px;object-position:center 40%}
 .hero-sub{position:absolute;bottom:0;left:0;width:60%}
@@ -88,21 +90,21 @@ body{margin:0;background:#FBEEE0}
 .marquee.rev .track{animation-direction:reverse;animation-duration:52s}
 .track span{font-family:'Paytone One',sans-serif;font-size:22px;text-transform:uppercase;padding:10px 0;display:flex;align-items:center;gap:20px;margin-right:20px;white-space:nowrap}
 .g2,.g3{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
-.rulesbox{padding:36px 12px 24px}
+.rulesbox{padding:24px 0 0;margin:0;border:none;outline:none;background:transparent}
 .rulecard{display:flex;flex-wrap:wrap;gap:12px 14px;align-items:flex-start;padding:18px}
 .rulecard > div{flex:1 1 200px;min-width:0}
 .rulecard > svg{width:52px;height:52px}
 .rulecard h3{margin:0;font-size:20px;line-height:1.15;font-weight:900}
 .rulecard p{margin:6px 0 0;color:var(--muted);font-size:15px}
 .lift{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;align-items:start;margin-top:40px}
-.panel{position:sticky;top:72px;z-index:5;background:var(--card);border:3px solid var(--ink);border-radius:24px;padding:12px;box-shadow:6px 6px 0 var(--line);display:flex;flex-direction:row;align-items:center;gap:12px}
+.panel{position:sticky;top:72px;z-index:5;background:var(--card);border:3px solid var(--ink);border-radius:22px;padding:8px 10px;box-shadow:6px 6px 0 var(--line);display:flex;flex-direction:row;align-items:center;gap:12px}
 .panel .hint{display:none}
-.screen{flex:none;width:92px;background:#21150F;color:#F29A55;border-radius:12px;padding:8px 6px;text-align:center;border:3px solid var(--ink)}
-.screen b{display:flex;align-items:center;justify-content:center;gap:4px;font-family:'Paytone One',sans-serif;font-weight:400;font-size:36px;line-height:1}
+.screen{flex:none;width:58px;background:#21150F;color:#F29A55;border-radius:12px;padding:8px 6px;text-align:center;border:3px solid var(--ink)}
+.screen b{display:flex;align-items:center;justify-content:center;gap:3px;font-family:'Paytone One',sans-serif;font-weight:400;font-size:28px;line-height:1}
 .screen b svg{animation:lift-up 1.2s ease-in-out infinite}
-.screen span{display:block;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#F8E8D8;line-height:1.2;margin-top:2px}
-.btns{flex:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;justify-items:center}
-.liftbtn{width:46px;height:46px;border-radius:50%;border:3px solid var(--ink);background:var(--paper);color:var(--ink);font-family:'Paytone One',sans-serif;font-size:18px;cursor:pointer;box-shadow:inset 0 -5px 0 var(--line);transition:transform .12s ease;-webkit-tap-highlight-color:transparent}
+.screen span{display:none;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#F8E8D8;line-height:1.2;margin-top:2px}
+.btns{flex:1;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;justify-items:center}
+.liftbtn{width:42px;height:42px;border-radius:50%;border:3px solid var(--ink);background:var(--paper);color:var(--ink);font-family:'Paytone One',sans-serif;font-size:18px;cursor:pointer;box-shadow:inset 0 -5px 0 var(--line);transition:transform .12s ease;-webkit-tap-highlight-color:transparent}
 .liftbtn:hover{transform:scale(1.07)}
 .liftbtn:active{transform:scale(.9);box-shadow:inset 0 3px 0 var(--line)}
 .liftbtn.on{background:var(--red);color:var(--on-red);box-shadow:0 0 0 4px var(--orange);animation:ding 1.6s ease-out infinite}
@@ -125,12 +127,13 @@ body{margin:0;background:#FBEEE0}
 .map svg.bg{position:absolute;inset:0;width:100%;height:100%}
 .lbl{position:absolute;transform:translate(-50%,-50%);background:var(--card);border:2px solid var(--ink);border-radius:999px;padding:2px 6px;font-size:10px;font-weight:900;white-space:nowrap}
 .lbl.big{font-family:'Paytone One',sans-serif;font-weight:400;font-size:13px;border:none;background:transparent;padding:0}
-.lbl.min{background:var(--pink);border-color:var(--red)}
+.lbl.min{display:none;background:var(--pink);border-color:var(--red)}
 .lbl.home{animation:pulse 2s ease-out infinite}
 .ants{animation:march 1.1s linear infinite}
 .bob{animation:bob 1.6s ease-in-out infinite}
 .walk{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
 .walk li{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:2px dashed var(--line);font-weight:800}
+.walk li span:last-child{white-space:nowrap;flex:none}
 .tours{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;margin-top:40px}
 .ticket{position:relative;background:var(--card);border:2.5px solid var(--ink);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s cubic-bezier(.3,1.5,.5,1),box-shadow .3s ease}
 .ticket:nth-of-type(odd){transform:rotate(-1.2deg)}
@@ -171,6 +174,54 @@ body{margin:0;background:#FBEEE0}
 .mbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;gap:10px;animation:slide-up .6s .8s cubic-bezier(.3,1.4,.5,1) both}
 .mbar .btn{flex:1}
 
+/* ---------- phone layouts ---------- */
+.ota{padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.ota h3{font-size:32px}
+.ota-note{display:none}
+.xgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.xgrid .extra{padding:14px 14px 16px;gap:4px;margin:4px}
+.xgrid .extra > svg{width:46px;height:42px}
+.xgrid .extra h3{font-size:15px;margin-top:4px}
+.xgrid .big-price{font-size:19px}
+.xgrid .extra p{font-size:13px;line-height:1.4}
+.swipe{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding:16px 16px 26px;margin-left:-16px;margin-right:-16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.swipe::-webkit-scrollbar{display:none}
+.swipe{scroll-padding-left:16px}
+.swipe > *{flex:0 0 80%;scroll-snap-align:start}
+.swipehint{margin:28px 0 -8px;text-align:right;font-size:22px;color:var(--red)}
+.swipehint span{display:inline-block;animation:nudge-x 1.4s ease-in-out infinite}
+.liftview{position:relative;scroll-margin-top:150px}
+.door{position:absolute;top:-6px;bottom:-6px;width:50.5%;z-index:4;pointer-events:none;background:repeating-linear-gradient(90deg,var(--card) 0 10px,var(--paper) 10px 12px);border:3px solid var(--ink);transform:scaleX(0);transition:transform .38s cubic-bezier(.6,0,.3,1)}
+.door.l{left:-4px;transform-origin:left;border-radius:18px 0 0 18px}
+.door.r{right:-4px;transform-origin:right;border-radius:0 18px 18px 0}
+.lift.shut .door{transform:scaleX(1)}
+.lift.shut .screen b{animation:blink .14s steps(1) 3}
+.lift.open .liftview > *:not(.door){animation:rise-in .5s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes blink{50%{opacity:.2}}
+@keyframes rise-in{from{opacity:0;transform:translateY(24px)}}
+@keyframes nudge-x{50%{transform:translateX(8px)}}
+
+/* ---------- reveal on scroll (site adds .io + .in) ---------- */
+.io .rv-r{opacity:0;transition:opacity .55s ease,translate .7s cubic-bezier(.2,1.25,.4,1),scale .7s cubic-bezier(.2,1.3,.4,1),rotate .7s cubic-bezier(.2,1.3,.4,1),transform .35s ease;transition-delay:var(--d,0s)}
+.io .rv-r[data-a="up"]{translate:0 56px}
+.io .rv-r[data-a="left"]{translate:-70px 0;rotate:-4deg}
+.io .rv-r[data-a="right"]{translate:70px 0;rotate:4deg}
+.io .rv-r[data-a="drop"]{translate:0 -60px;rotate:-10deg;scale:1.12}
+.io .rv-r[data-a="pop"]{scale:.55}
+.io .rv-r.in{opacity:1;translate:0 0;rotate:0deg;scale:1}
+.io .titlerow.in h2{animation:stamp .65s cubic-bezier(.3,1.7,.5,1) both}
+.io .rulecard .no{stroke-dasharray:180;stroke-dashoffset:180;transition:stroke-dashoffset .9s .35s ease}
+.io .rulecard.in .no{stroke-dashoffset:0}
+.io .extra.in > svg{animation:hop .8s .25s cubic-bezier(.3,1.6,.5,1) both}
+.io .busboard.in .routes span{animation:flip-in .45s cubic-bezier(.3,1.5,.5,1) both,flicker 5s 1.5s steps(1) infinite;animation-delay:calc(var(--i,0) * .07s + .2s),calc(var(--i,0) * .45s + 1.5s)}
+.io .progress{transform:none;width:var(--p,0%);transition:width .1s linear}
+.io .progress::after{content:"";position:absolute;right:-7px;top:-5px;width:14px;height:14px;border-radius:50%;background:var(--orange);border:2.5px solid var(--ink)}
+.card:active,.ticket:active,.polaroid:active{scale:.98}
+.ltr:active{animation:jelly .5s ease both}
+@keyframes stamp{from{opacity:0;scale:1.7;rotate:-7deg}}
+@keyframes hop{0%{transform:translateY(0)}35%{transform:translateY(-14px) rotate(-10deg)}70%{transform:translateY(0) rotate(4deg)}}
+@keyframes flip-in{from{opacity:0;transform:rotateX(90deg)}}
+
 /* ---------- motion ---------- */
 .ltr{display:inline-block;animation:drop .7s cubic-bezier(.3,1.6,.5,1) both;animation-delay:calc(var(--i) * 60ms)}
 .ltr:hover{animation:jelly .5s ease both}
@@ -204,9 +255,7 @@ body{margin:0;background:#FBEEE0}
 @keyframes rise{from{opacity:0;translate:0 48px;scale:.94}}
 @keyframes grow{to{transform:scaleX(1)}}
 @supports (animation-timeline: view()){
- .card,.polaroid,.ticket,.busboard,.map,.titlerow,.walk li,.faq details{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
  .liftbtn.on{animation:ding 1.6s ease-out infinite;animation-timeline:auto}
- .progress{animation:grow linear both;animation-timeline:scroll(root)}
 }
 .rv[data-motion="off"] *,.rv[data-motion="off"] *::before,.rv[data-motion="off"] *::after{animation:none!important;transition:none!important}
 .rv[data-motion="off"] .ant{display:none}
@@ -218,6 +267,7 @@ body{margin:0;background:#FBEEE0}
 /* ---------- bigger screens ---------- */
 @media (min-width: 600px){
  .wrap{padding:0 24px}
+ .hero{padding:32px 24px 56px}
  .rv{font-size:17px}
  .stats{display:flex;flex-wrap:wrap}
  .stat b{font-size:28px}
@@ -230,18 +280,38 @@ body{margin:0;background:#FBEEE0}
  .track span{font-size:28px;padding:13px 0}
  .routes span{font-size:20px}
  .titlerow > svg{width:48px;height:60px}
+ .swipe{display:grid;overflow:visible;padding:0;margin-left:0;margin-right:0;scroll-snap-type:none}
+ .swipe > *{flex:none}
+ .swipehint{display:none}
+ .lbl.min{display:block}
+ .screen{width:92px}
+ .screen b{font-size:36px}
+ .screen span{display:block}
+ .liftbtn{width:46px;height:46px}
+ .ota{padding:24px 24px}
+ .ota-note{display:block}
 }
 @media (min-width: 900px){
  .rv{padding-bottom:0}
  .mbar{display:none}
+ .navcta{display:inline-flex!important}
+ .ota{padding:28px 26px;gap:14px}
+ .ota h3{font-size:42px}
+ .xgrid .extra{padding:24px 26px;gap:6px;margin:6px}
+ .xgrid .extra > svg{width:72px;height:64px}
+ .xgrid .extra h3{font-size:21px;margin-top:8px}
+ .xgrid .big-price{font-size:32px}
+ .xgrid .extra p{font-size:16px}
+ .rulesbox{padding:46px 34px 34px;margin:6px;border:2.5px solid var(--line);outline:1.5px solid var(--line);background:var(--card)}
  .navin{min-height:76px}
  .navin .brand{font-size:30px}
  .navlinks{display:flex}
  .sec{padding:110px 0 90px}
  .lede{font-size:19px;margin-top:22px}
- .hero{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:40px;padding:56px 0 80px}
+ .hero{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:40px;padding:56px 24px 80px}
  .big .burst{width:50px;height:64px}
  .hero-art{min-height:640px}
+ .screen span{display:block}
  .hero-main{right:30px;width:72%}
  .hero-main img{height:470px}
  .hero-sub{width:56%}
@@ -259,7 +329,6 @@ body{margin:0;background:#FBEEE0}
  .liftbtn{width:64px;height:64px;font-size:24px}
  .room .pic{height:270px}
  .card{border-radius:24px;outline-offset:5px;margin:6px}
- .rulesbox{padding:46px 34px 34px}
  .rulecard{flex-wrap:nowrap;gap:18px;padding:22px 24px}
  .rulecard > svg{width:64px;height:64px}
  .rulecard h3{font-size:22px}
@@ -300,7 +369,7 @@ body{margin:0;background:#FBEEE0}
 <a href="#extras">Extras</a>
 <a href="#faq">FAQ</a>
 </nav>
-<a class="btn sm" href="#book">See prices</a>
+<a class="btn sm navcta" href="#book">See prices</a>
 </div>
 </header>
 
@@ -381,25 +450,25 @@ Hà Nội · by the Red River
 <p class="lede">We don't take bookings on this site. Pick the app you already use: same beds, same terrace, same people at the desk when you arrive.</p>
 
 <div class="g3" style="margin-top: 50px">
-<div class="card" style="padding: 28px 26px; display: flex; flex-direction: column; gap: 14px; transform: rotate(-1deg)">
+<div class="card ota" style="transform: rotate(-1deg)">
 <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="num">1</span><span class="hand" style="font-size: 22px; color: var(--red)">backpacker classic</span></div>
-<h3 class="disp" style="font-size: 42px; text-transform: none">Hostelworld</h3>
+<h3 class="disp" style="text-transform: none">Hostelworld</h3>
 <div style="font-weight: 800">Rated 10/10 · 1 review so far (we're new)</div>
-<p style="margin: 0; color: var(--muted)">Dorm beds and both private rooms.</p>
+<p class="ota-note" style="margin: 0; color: var(--muted)">Dorm beds and both private rooms.</p>
 <a class="btn" href="https://www.hostelworld.com/hostels/p/341088/river-hideaway-hostel/" target="_blank" rel="noopener" style="margin-top: 6px">See prices on Hostelworld
 <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 H17 V15" style="stroke: currentColor; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
-<div class="card" style="padding: 28px 26px; display: flex; flex-direction: column; gap: 14px; transform: rotate(0.8deg)">
+<div class="card ota" style="transform: rotate(0.8deg)">
 <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="num">2</span><span class="hand" style="font-size: 22px; color: var(--red)">free cancellation fans</span></div>
-<h3 class="disp" style="font-size: 42px; text-transform: none">Booking.com</h3>
-<p style="margin: 0; color: var(--muted)">Dorm beds and both private rooms.</p>
+<h3 class="disp" style="text-transform: none">Booking.com</h3>
+<p class="ota-note" style="margin: 0; color: var(--muted)">Dorm beds and both private rooms.</p>
 <a class="btn" href="https://www.booking.com/searchresults.html?ss=River%20Hideaway%20Hostel%20Hanoi" target="_blank" rel="noopener" style="margin-top: 6px">See prices on Booking.com
 <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 H17 V15" style="stroke: currentColor; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
-<div class="card" style="padding: 28px 26px; display: flex; flex-direction: column; gap: 14px; transform: rotate(-0.6deg)">
+<div class="card ota" style="transform: rotate(-0.6deg)">
 <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px"><span class="num">3</span><span class="hand" style="font-size: 22px; color: var(--red)">big in Asia</span></div>
-<h3 class="disp" style="font-size: 42px; text-transform: none">Agoda</h3>
-<p style="margin: 0; color: var(--muted)">Dorm beds and both private rooms.</p>
+<h3 class="disp" style="text-transform: none">Agoda</h3>
+<p class="ota-note" style="margin: 0; color: var(--muted)">Dorm beds and both private rooms.</p>
 <a class="btn" href="https://www.agoda.com/search?textToSearch=River%20Hideaway%20Hostel%20Hanoi" target="_blank" rel="noopener" style="margin-top: 6px">See prices on Agoda
 <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 L17 7 M9 7 H17 V15" style="stroke: currentColor; stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round"></path></svg></a>
 </div>
@@ -426,7 +495,7 @@ Hà Nội · by the Red River
 </div>
 <p class="lede">Five floors, 46 beds: five mixed dorms with 44 bunks between them, one double room and one family room. Press a button. Yes, there's a real lift too.</p>
 
-<div class="lift">
+<div class="lift ">
 <div class="panel">
 <div class="screen" id="liftscreen"><b><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1 L13 11 H1 Z" style="fill: #F29A55"></path></svg>3</b><span>Floor 3 · dorms</span></div>
 <div class="btns" role="group" aria-label="Choose a floor">
@@ -449,7 +518,8 @@ Hà Nội · by the Red River
 
 <div id="floorviews">
 <div class="floorview" data-floor="T" hidden>
-<div>
+<div class="liftview">
+<div class="door l" aria-hidden="true"></div><div class="door r" aria-hidden="true"></div>
 <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 22px">
 <div>
 <div class="hand" style="font-size: 26px; color: var(--red)">Top · terrace</div>
@@ -509,7 +579,8 @@ Hà Nội · by the Red River
 </div>
 </div>
 <div class="floorview" data-floor="5" hidden>
-<div>
+<div class="liftview">
+<div class="door l" aria-hidden="true"></div><div class="door r" aria-hidden="true"></div>
 <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 22px">
 <div>
 <div class="hand" style="font-size: 26px; color: var(--red)">Floor 5 · dorm</div>
@@ -572,7 +643,8 @@ Hà Nội · by the Red River
 </div>
 </div>
 <div class="floorview" data-floor="4" hidden>
-<div>
+<div class="liftview">
+<div class="door l" aria-hidden="true"></div><div class="door r" aria-hidden="true"></div>
 <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 22px">
 <div>
 <div class="hand" style="font-size: 26px; color: var(--red)">Floor 4 · private</div>
@@ -646,7 +718,8 @@ Hà Nội · by the Red River
 </div>
 </div>
 <div class="floorview" data-floor="3">
-<div>
+<div class="liftview">
+<div class="door l" aria-hidden="true"></div><div class="door r" aria-hidden="true"></div>
 <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 22px">
 <div>
 <div class="hand" style="font-size: 26px; color: var(--red)">Floor 3 · dorms</div>
@@ -716,7 +789,8 @@ Hà Nội · by the Red River
 </div>
 </div>
 <div class="floorview" data-floor="2" hidden>
-<div>
+<div class="liftview">
+<div class="door l" aria-hidden="true"></div><div class="door r" aria-hidden="true"></div>
 <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 22px">
 <div>
 <div class="hand" style="font-size: 26px; color: var(--red)">Floor 2 · dorms</div>
@@ -786,7 +860,8 @@ Hà Nội · by the Red River
 </div>
 </div>
 <div class="floorview" data-floor="1" hidden>
-<div>
+<div class="liftview">
+<div class="door l" aria-hidden="true"></div><div class="door r" aria-hidden="true"></div>
 <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 22px">
 <div>
 <div class="hand" style="font-size: 26px; color: var(--red)">Ground · lobby</div>
@@ -949,9 +1024,9 @@ Hà Nội · by the Red River
 <g transform="translate(560 420)"><circle cx="24" cy="24" r="22" style="fill: var(--card); stroke: var(--ink); stroke-width: 2.5"></circle><path d="M24 8 L30 26 L24 22 L18 26Z" style="fill: var(--red)"></path><text x="18" y="42" style="font-family: 'Paytone One', sans-serif; font-size: 13px; fill: var(--ink)">N</text></g>
 <g transform="translate(40 300)"><path d="M4 34 C20 30,36 22,56 6" style="fill: none; stroke: var(--ink); stroke-width: 2.5; stroke-linecap: round"></path><path class="lf" d="M18 30 C16 22,20 16,26 14 C26 22,23 27,18 30Z"></path><path class="lf" d="M30 24 C30 16,35 11,41 10 C40 18,36 22,30 24Z"></path><path class="lf" d="M36 22 C42 26,48 25,52 20 C46 17,40 18,36 22Z"></path></g>
 </svg>
-<span class="lbl big" style="left: 32%; top: 27%">Old Quarter</span>
+<span class="lbl big" style="left: 27%; top: 21%">Old Quarter</span>
 <span class="lbl" style="left: 31%; top: 84%">Hồ Hoàn Kiếm</span>
-<span class="lbl" style="left: 40%; top: 33%">Tạ Hiện beer corner</span>
+<span class="lbl" style="left: 38%; top: 34%">Tạ Hiện beer corner</span>
 <span class="lbl" style="left: 69%; top: 18%">Long Biên bridge + station</span>
 <span class="lbl big" style="left: 81%; top: 66%; color: var(--ink)">Sông Hồng</span>
 <span class="lbl home" style="left: 61%; top: 57%; background: var(--red); color: var(--on-red); border-color: var(--ink)">You sleep here</span>
@@ -996,13 +1071,14 @@ Hà Nội · by the Red River
 </div>
 <p class="lede">We book trips the way a friend would: at the desk, arranged by the owner, with someone who speaks English on the phone if the bus is late somewhere in Hà Giang.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 24px">
-<span class="chip" style="background: var(--paper); font-size: 15px">Booked at the desk</span>
-<span class="chip" style="background: var(--paper); font-size: 15px">Arranged by the owner</span>
-<span class="chip" style="background: var(--paper); font-size: 15px">English help on the road</span>
-<span class="chip" style="background: var(--paper); font-size: 15px">More routes than these: ask</span>
+<span class="chip">Booked at the desk</span>
+<span class="chip">Arranged by the owner</span>
+<span class="chip">English help on the road</span>
+<span class="chip">More routes than these: ask</span>
 </div>
 
-<div class="tours">
+<p class="hand swipehint" aria-hidden="true">swipe <span>→</span></p>
+<div class="tours swipe">
 
 <article class="ticket">
 <img loading="lazy" decoding="async" src="assets/tour-hagiang.jpg" alt="Mã Pí Lèng pass winding above a river gorge">
@@ -1081,7 +1157,8 @@ Hà Nội · by the Red River
 </div>
 <p class="lede">Rooms are easy to photograph. People are the reason to stay.</p>
 
-<div class="g3" style="margin-top: 60px; align-items: start">
+<p class="hand swipehint" aria-hidden="true" style="margin-top: 36px">swipe <span>→</span></p>
+<div class="g3 swipe" style="margin-top: 24px; align-items: start">
 <div class="polaroid" style="transform: rotate(-3deg)"><div class="tape" style="top: -14px; left: 34%; transform: rotate(-4deg)"></div><img loading="lazy" decoding="async" src="assets/terrace-sunset-b.jpg" alt="The terrace at sunset under string lights" style="height: 260px"><div class="cap">the terrace, golden hour</div></div>
 <div class="polaroid" style="transform: rotate(1.5deg)"><div class="tape" style="top: -14px; left: 32%; transform: rotate(5deg)"></div><img loading="lazy" decoding="async" src="assets/lobby-lin04807.jpg" alt="The common area with sofas and a big TV" style="height: 260px"><div class="cap">common area, Netflix negotiations</div></div>
 <div class="polaroid" style="transform: rotate(2.5deg)"><div class="tape" style="top: -14px; left: 30%; transform: rotate(6deg)"></div><img loading="lazy" decoding="async" src="assets/lobby-lin04840.jpg" alt="Front desk and lobby" style="height: 260px"><div class="cap">front desk. say hi</div></div>
@@ -1127,7 +1204,7 @@ Hà Nội · by the Red River
 <svg width="56" height="70" viewBox="0 0 48 60" aria-hidden="true" class="flip"><path class="ray" d="M40 10 L24 2"></path><path class="ray" d="M40 30 L14 30"></path><path class="ray" d="M40 50 L24 58"></path></svg>
 </div>
 <p class="lede">Straight off the board in our lobby. Prices in đồng, no surprises.</p>
-<div class="g3" style="margin-top: 50px">
+<div class="g3 xgrid" style="margin-top: 40px">
 <div class="card extra">
 <svg width="72" height="64" viewBox="0 0 72 64" aria-hidden="true"><path class="s f-c" d="M6 30 H48 A21 21 0 0 1 6 30Z"></path><path class="s f-o" d="M14 30 C16 22,24 20,28 26 C32 20,40 22,42 30"></path><circle cx="30" cy="26" r="5" style="fill: #FFF8EF; stroke: var(--ink); stroke-width: 2.5"></circle><circle cx="30" cy="26" r="2" style="fill: var(--orange)"></circle><path class="s" d="M44 6 L56 30 M50 4 L60 26"></path><path class="s f-c" d="M54 40 H68 V50 A7 7 0 0 1 54 50Z"></path><path class="s" d="M58 34 C56 30,60 29,58 25"></path></svg>
 <h3>Breakfast</h3><b class="big-price">Free</b><p>Every morning, 7:30 – 10:00.</p>
@@ -1265,7 +1342,7 @@ Hà Nội · by the Red River
 <div class="g3" style="align-items: start">
 <div>
 <span class="disp" style="font-size: 44px">River Hideaway<span style="color: var(--red)">.</span></span>
-<p class="hand" style="margin: 6px 0 0; font-size: 24px; color: var(--red)">Good people · Good stays · Greater journeys</p>
+<p class="hand" style="margin: 6px 0 0; font-size: 21px; color: var(--red)">Good people · Good stays · Greater journeys</p>
 <p style="margin: 6px 0 0; color: var(--muted)">71 Bảo Linh, Hồng Hà ward, Hà Nội</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px; font-weight: 800">
@@ -1285,19 +1362,80 @@ Hà Nội · by the Red River
 </div>
 <script>
 (function(){
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   var floors=[{"id": "T", "short": "T", "kicker": "Top · terrace"}, {"id": "5", "short": "5", "kicker": "Floor 5 · dorm"}, {"id": "4", "short": "4", "kicker": "Floor 4 · private"}, {"id": "3", "short": "3", "kicker": "Floor 3 · dorms"}, {"id": "2", "short": "2", "kicker": "Floor 2 · dorms"}, {"id": "1", "short": "1", "kicker": "Ground · lobby"}];
+  /* lift doors */
+  var lift=document.querySelector('.lift');
   var btns=document.querySelectorAll('[data-floor-btn]');
   var views=document.querySelectorAll('.floorview');
   var screen=document.getElementById('liftscreen');
+  var cur='3',t1,t2;
+  function show(f){
+    views.forEach(function(v){v.hidden=v.getAttribute('data-floor')!==f.id;});
+    screen.querySelector('b').lastChild.nodeValue=f.short;
+    screen.querySelector('span').textContent=f.kicker;
+  }
   btns.forEach(function(b,i){
     b.addEventListener('click',function(){
-      var f=floors[i];
+      var f=floors[i]; if(f.id===cur) return; cur=f.id;
       btns.forEach(function(x,j){x.classList.toggle('on',j===i);x.setAttribute('aria-pressed',j===i?'true':'false');});
-      views.forEach(function(v){v.hidden=v.getAttribute('data-floor')!==f.id;});
-      screen.querySelector('b').lastChild.nodeValue=f.short;
-      screen.querySelector('span').textContent=f.kicker;
+      clearTimeout(t1);clearTimeout(t2);
+      if(reduce){show(f);return;}
+      lift.classList.remove('open');lift.classList.add('shut');
+      t1=setTimeout(function(){show(f);var lv=document.querySelector('.floorview:not([hidden]) .liftview');if(lv&&lv.getBoundingClientRect().top<140)lv.scrollIntoView({block:'start'});requestAnimationFrame(function(){requestAnimationFrame(function(){lift.classList.remove('shut');lift.classList.add('open');});});},420);
+      t2=setTimeout(function(){lift.classList.remove('open');},1000);
     });
   });
+  if(reduce) return;
+  document.documentElement.classList.add('io');
+  /* reveal on scroll */
+  function tag(sel,a,stagger){
+    document.querySelectorAll(sel).forEach(function(el){
+      if(el.closest('.hero')||el.closest('.nav')||el.closest('.mbar')||el.classList.contains('rv-r')) return;
+      var mode=a;
+      if(a==='alt'){var k=Array.prototype.indexOf.call(el.parentNode.children,el);mode=k%2?'right':'left';}
+      if(el.closest('.swipe')) mode='up';
+      el.classList.add('rv-r');el.setAttribute('data-a',mode);
+      if(stagger){var n=Array.prototype.indexOf.call(el.parentNode.children,el);el.style.setProperty('--d',(n%4)*0.08+'s');}
+    });
+  }
+  tag('.titlerow','up');
+  tag('.lede','up');
+  tag('.polaroid','drop',true);
+  tag('.ticket','right',true);
+  tag('.g2 > .card, .g3 > .card','alt',true);
+  tag('.rooms > .card','up',true);
+  tag('.card','up');
+  tag('.busboard, .map, .daybar','pop');
+  tag('.walk li, .chat','left',true);
+  tag('.faq details','up',true);
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);if(e.target._count)e.target._count();}});
+  },{threshold:0.12,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv-r').forEach(function(el){io.observe(el);});
+  /* count up numbers */
+  function counter(el,delay){
+    var node=null;for(var c=el.firstChild;c;c=c.nextSibling){if(c.nodeType===3&&/\d/.test(c.nodeValue)){node=c;break;}}
+    if(!node) return;
+    var txt=node.nodeValue,m=txt.match(/\d[\d,]*/);if(!m) return;
+    var target=parseInt(m[0].replace(/,/g,''),10);if(target<4) return;
+    var comma=m[0].indexOf(',')>-1;
+    function fmt(n){var s=String(n);return comma?s.replace(/\B(?=(\d{3})+(?!\d))/g,','):s;}
+    node.nodeValue=txt.replace(m[0],fmt(0));
+    return function(){setTimeout(function(){var t0=null;function step(ts){if(!t0)t0=ts;var k=Math.min(1,(ts-t0)/900);var e=1-Math.pow(1-k,3);var v=k<1?Math.round(target*e):target;if(k<1&&target>=1000)v=Math.round(v/1000)*1000;node.nodeValue=txt.replace(m[0],fmt(v));if(k<1)requestAnimationFrame(step);}requestAnimationFrame(step);},delay||0);};
+  }
+  document.querySelectorAll('.stat b').forEach(function(b,i){var go=counter(b);if(go)setTimeout(go,800+i*120);});
+  document.querySelectorAll('.big-price').forEach(function(b){var go=counter(b,250);var card=b.closest('.rv-r');if(go&&card)card._count=go;else if(go)go();});
+  /* progress + hero drift */
+  var bar=document.querySelector('.progress'),hm=document.querySelector('.hero-main'),hs=document.querySelector('.hero-sub'),ticking=false;
+  function onScroll(){
+    var y=window.scrollY,h=document.documentElement.scrollHeight-innerHeight;
+    if(bar) bar.style.setProperty('--p',(h>0?y/h*100:0).toFixed(2)+'%');
+    if(y<1000){if(hm)hm.style.translate='0 '+(y*0.09).toFixed(1)+'px';if(hs)hs.style.translate='0 '+(-y*0.06).toFixed(1)+'px';}
+    ticking=false;
+  }
+  addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll);}},{passive:true});
+  onScroll();
 })();
 </script>
 </body>

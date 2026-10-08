@@ -75,12 +75,13 @@ body{margin:0;background:#FBEEE0}
 .stat{background:var(--card);border:2.5px solid var(--ink);border-radius:18px;padding:10px 14px;box-shadow:4px 4px 0 var(--line)}
 .stat b{display:block;font-family:'Paytone One',sans-serif;font-weight:400;font-size:24px;line-height:1.05}
 .stat span{font-size:13px;color:var(--muted);font-weight:800}
-.hero-art{position:relative;min-height:560px}
-.hero-main{position:absolute;top:10px;right:6px;width:78%}
-.hero-main img{height:310px;object-position:center 40%}
-.hero-sub{position:absolute;bottom:0;left:0;width:60%}
-.hero-sub img{height:150px}
-.hero-art .spin{position:absolute;bottom:40px;right:-4px;width:108px;height:108px}
+.hero-art{position:relative;min-height:520px;margin-top:22px}
+.hero-art .hero-main{position:absolute;top:8px;right:4px;width:76%}
+.hero-art .hero-main img{height:290px;object-position:center 40%}
+.hero-art .hero-sub{position:absolute;top:300px;left:0;width:56%}
+.hero-art .hero-sub img{height:140px}
+.hero-art .spin{position:absolute;top:-18px;left:-4px;right:auto;width:92px;height:92px;z-index:3}
+.hero-art .hero-main .cap{text-align:right}
 .polaroid{position:relative;background:var(--photo);padding:10px 10px 40px;border:2px solid var(--ink);box-shadow:8px 10px 0 var(--shadow);transition:transform .35s cubic-bezier(.3,1.5,.5,1)}
 .polaroid:hover{transform:rotate(0deg) scale(1.03)!important}
 .polaroid img{display:block;width:100%;object-fit:cover;border:1.5px solid rgba(58,38,32,.25)}
@@ -322,11 +323,12 @@ body{margin:0;background:#FBEEE0}
  .hero-cta{display:flex}
  .hero-art{min-height:640px}
  .screen span{display:block}
- .hero-main{right:30px;width:72%}
- .hero-main img{height:470px}
- .hero-sub{width:56%}
- .hero-sub img{height:200px}
- .hero-art .spin{width:150px;height:150px;bottom:70px;right:0}
+ .hero-art .hero-main{right:30px;width:72%}
+ .hero-art .hero-main img{height:470px}
+ .hero-art .hero-sub{top:auto;bottom:0;width:56%}
+ .hero-art .hero-sub img{height:200px}
+ .hero-art .spin{top:auto;left:auto;width:150px;height:150px;bottom:70px;right:0}
+ .hero-art .hero-main .cap{text-align:left}
  .g3{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
  .where-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}
  .lift{grid-template-columns:250px minmax(0,1fr);gap:34px;margin-top:56px}
